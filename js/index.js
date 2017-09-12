@@ -1,8 +1,11 @@
 var myViewModel = {
+    //Filter Section
     allCategories: ko.observableArray([]),
-    selectedProduct: ko.observable(),
     selectedCategory: ko.observable(),
     selectedName: ko.observable(''),
+
+    //Selected Product Section
+    selectedProduct: ko.observable(),
     shouldShow: function(item) {
         return new RegExp(myViewModel.selectedName(), "gi").test(item.title);
     },
