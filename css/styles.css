@@ -1,0 +1,49 @@
+.jewel {
+    border: 1px solid grey;
+    text-align: center;
+    margin: 2px;
+    float: left;
+}
+
+.jewel img {
+    max-height: 72px;
+}
+
+.category {
+    clear: both;
+}
+
+.filter {
+    float: right;
+    clear: both;
+}
+
+.filter > h2 {
+    text-align: center;
+} 
+
+.selectedProduct {
+    clear: both;
+    text-align: center;
+}
+
+.selectedProduct .jewel {
+    float: none; 
+}
+
+.selectedProduct .jewel img {
+    max-height: 144px;
+}
+
+body {
+    margin-top: 2em;
+}
+
+.topbar {
+    position: absolute;
+    top: 0px;
+}
+
+.clear-float {
+    clear: both;
+}

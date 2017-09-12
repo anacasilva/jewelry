@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jewelry Show Case</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<div class="topbar">
+  <a href="index.html">Home page</a>
+  <a href="cart.html">Cart</a>
+  <a href="contact_us.html">Contact us</a>
+</div>
+
+<!-- Start: Filter Section -->
+<div class="filter">
+  <h2>Filter by</h2>
+
+  <div class="category">
+    Category:
+    <select data-bind="options: categoryName,
+                       optionsCaption: 'All Products',
+                       value: selectedCategory"></select>
+  </div>
+  <div class="name">
+    Choose Product:
+    <input type="text" data-bind="textInput: selectedName"/>
+  </div>
+</div>
+<!-- End: Filter Section -->
+
+
+<h1>Welcome to our Jewelry collection.</h1>
+
+<h2>Can you find anything interesting?</h2>
+
+<div data-bind="foreach: categories">
+  <div class="category">
+    <h3>Category: <span data-bind="text: name"></span></h3>
+
+    <div data-bind="foreach: products">
+      <div class="jewel" data-bind="visible: $root.shouldShow($data),
+                                                  click: $root.selectProduct,
+                                                  event: {
+                                                    mouseover: $root.showProduct,
+                                                    mouseout: $root.hideProduct
+                                                  }">
+        <div data-bind="text: title"></div>
+        <img data-bind="attr: { src: 'images/' + thumb }">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="selectedProduct" data-bind="with: selectedProduct">
+  Prodotto selezionato:
+  <div class="jewel">
+    <div data-bind="text: title"></div>
+    <!-- ko foreach: images -->
+    <img data-bind="attr: { src: 'images/' + $data }">
+    <!-- /ko -->
+    <div data-bind="text: description"></div>
+    <div data-bind="text: price"></div>
+    <button data-bind="click: $root.addToCart">Add to cart</button>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/knockout-3.2.0.debug.js"></script>
+<script type="text/javascript" src="js/basket-localStorage.js"></script>
+<script type="text/javascript" src="js/basket.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

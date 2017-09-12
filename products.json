@@ -1,0 +1,103 @@
+{
+    "categories": [{
+            "name": "Necklaces",
+            "description": "Necklaces",
+            "products": [{
+                    "title": "Necklace 1",
+                    "price": "12€",
+                    "thumb": "necklace_1_small.jpg",
+                    "description": "A really nice necklace with…",
+                    "images": ["necklace_1_big_1.jpg"]
+                }, {
+                    "title": "Necklace 2",
+                    "price": "12€",
+                    "thumb": "necklace_2_small.jpg",
+                    "description": "A really nice necklace with…",
+                    "images": ["necklace_2_big_1.jpg", "necklace_2_big_2.jpg", "necklace_2_big_3.jpg"]
+                }, {
+                    "title": "Necklace 3",
+                    "price": "12€",
+                    "thumb": "necklace_3_small.jpg",
+                    "description": "A really nice necklace with…",
+                    "images": ["necklace_3_big_1.jpg", "necklace_3_big_2.jpg"]
+                }, {
+                    "title": "Necklace 4",
+                    "price": "12€",
+                    "thumb": "necklace_4_small.jpg",
+                    "description": "A really nice necklace with…",
+                    "images": ["necklace_4_big_1.jpg"]
+                }, {
+                    "title": "Necklace 5",
+                    "price": "12€",
+                    "thumb": "necklace_5_small.jpg",
+                    "description": "A really nice necklace with…",
+                    "images": ["necklace_5_big_1.jpg", "necklace_5_big_2.jpg"]
+                }]
+        }, {
+            "name": "Rings",
+            "description": "Rings",
+            "products": [{
+                    "title": "Ring 1",
+                    "price": "4€",
+                    "thumb": "ring_1_small.jpg",
+                    "description": "A nice ring with…",
+                    "images": ["ring_1_big_1.jpg"]
+                }, {
+                    "title": "Ring 2",
+                    "price": "8€",
+                    "thumb": "ring_2_small.jpg",
+                    "description": "A nice ring with…",
+                    "images": ["ring_2_big_1.jpg", "ring_2_big_2.jpg", "ring_2_big_3.jpg"]
+                }, {
+                    "title": "Ring 3",
+                    "price": "6€",
+                    "thumb": "ring_3_small.jpg",
+                    "description": "A nice ring with…",
+                    "images": ["ring_3_big_1.jpg", "ring_3_big_2.jpg"]
+                }]
+        }, {
+            "name": "Earrings",
+            "description": "Earrings",
+            "products": [{
+                    "title": "Earrings 1",
+                    "price": "12€",
+                    "thumb": "earring_1_small.jpg",
+                    "description": "A really nice earring with…",
+                    "images": ["earring_1_big_1.jpg"]
+                }, {
+                    "title": "Earrings 2",
+                    "price": "12€",
+                    "thumb": "earring_2_small.jpg",
+                    "description": "A really nice earring with…",
+                    "images": ["earring_2_big_1.jpg", "earring_2_big_2.jpg", "earring_2_big_3.jpg"]
+                }, {
+                    "title": "Earrings 3",
+                    "price": "12€",
+                    "thumb": "earring_3_small.jpg",
+                    "description": "A really nice earring with…",
+                    "images": ["earring_3_big_1.jpg", "earring_3_big_2.jpg"]
+                }, {
+                    "title": "Earrings 4",
+                    "price": "12€",
+                    "thumb": "earring_4_small.jpg",
+                    "description": "A really nice earring with…",
+                    "images": ["earring_4_big_1.jpg"]
+                }]
+        }, {
+            "name": "Bracelets",
+            "description": "Bracelets",
+            "products": [{
+                    "title": "Bracelets 1",
+                    "price": "12€",
+                    "thumb": "bracelet_1_small.jpg",
+                    "description": "A bracelets with…",
+                    "images": ["bracelet_1_big_1.jpg"]
+                }, {
+                    "title": "Bracelets 2",
+                    "price": "12€",
+                    "thumb": "bracelet_2_small.jpg",
+                    "description": "A bracelets with…",
+                    "images": ["bracelet_2_big_1.jpg", "bracelet_2_big_2.jpg", "bracelet_2_big_3.jpg"]
+                }]
+        }]
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jewelry Show Case - Contact</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<div class="topbar">
+  <a href="index.html">Home page</a>
+  <a href="cart.html">Cart</a>
+  <a href="contact_us.html">Contact us</a>
+</div>
+
+<form data-bind="submit: buy">
+  <div class="field">
+    My mail address:
+    <input type="text" data-bind="textInput: email"/>
+  </div>
+  <div class="field">
+    Additional details:
+    <textarea data-bind="value: message"></textarea>
+  </div>
+  <h1>List of item I would buy</h1>
+
+  <div data-bind="foreach: products">
+    <div class="jewel">
+      <div data-bind="text: title"></div>
+      <img data-bind="attr: { src: 'images/' + thumb }">
+
+      <div data-bind="text: description"></div>
+      <div data-bind="text: price"></div>
+    </div>
+  </div>
+
+  <div class="clear-float"></div>
+  <input type="submit" value="Send the buying message"
+         data-bind="enable: canBuy"/>
+</form>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/knockout-3.2.0.debug.js"></script>
+<script type="text/javascript" src="js/basket-localStorage.js"></script>
+<script type="text/javascript" src="js/basket.js"></script>
+<script type="text/javascript" src="js/contact_us.js"></script>
+</body>
+</html>
